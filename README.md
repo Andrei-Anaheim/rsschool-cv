@@ -1,1 +1,0 @@
-https://Andrei-Anaheim.github.io/rsschool-cv/cv
