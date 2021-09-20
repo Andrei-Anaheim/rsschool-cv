@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -76,14 +76,14 @@ a<!DOCTYPE html>
                             <div class="screen-box1"></div>
                             <div class="description-box">
                                 <p class='projectname'><a href="https://rolling-scopes-school.github.io/andrei-anaheim-JSFEPRESCHOOL/whackamole/">Whack-a-mole</a></p>
-                                <p>Классическая игра "Поймай крота" в обертке киновикторины.</br>Выполнено на stage0.</p>
+                                <p>Классическая игра "Поймай крота" в обертке киновикторины.<br>Выполнено на stage0.</p>
                             </div>
                         </div>
                         <div class="project2">
                             <div class="screen-box2"></div>
                             <div class="description-box">
                                 <p class='projectname'><a href="https://rolling-scopes-school.github.io/andrei-anaheim-JSFEPRESCHOOL/jsclock/">JS-Clock</a></p>
-                                <p>Классические часы. </br>Бонус: Настраиваемые 4 дополнительных часов и будильник.</br>Выполнено на stage0. </p>
+                                <p>Классические часы. <br>Бонус: Настраиваемые 4 дополнительных часов и будильник.<br>Выполнено на stage0. </p>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ def parse_courses():
  FINISH = int(input("Enter FINISH number: "))
  csvfile = open('2019result.csv', "w")
  i = START
- while i <= FINISH :
+ while i &lt;= FINISH :
   adress = URL + str(i)
   f = urlopen(adress)
   list_html = f.read().decode('utf-8')
@@ -169,8 +169,8 @@ End Sub
                                 <code>
 function rgb(r, g, b){
  function toHex(a) { 
-  if (a <= 0) return '00';
-  else if (a >= 255) return 'FF';
+  if (a &lt;= 0) return '00';
+  else if (a &gt;= 255) return 'FF';
   else return a.toString(16).toUpperCase();
  }
  return toHex(r) + toHex(g) + toHex(b);
