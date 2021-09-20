@@ -1,0 +1,305 @@
+html {
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image: url(./img/doska-7.jpg);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.block1 {
+    display: flex;
+    width: 100%;
+    font-size: 180%;
+}
+
+header {
+    position: relative;
+    font-size: 150%;
+    line-height: 200%;
+}
+
+.container1 { 
+    padding: 0 0.2vw;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigator {
+    width:100%;
+    font-size:100%;
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    letter-spacing: 2px;
+    list-style-type:none;
+}
+
+.navigator a {
+    color:white;
+    padding:0 10px;
+    text-decoration: none; 
+}
+.navigator a:hover {
+    text-shadow:
+      0 0 5px rgb(230, 226, 26),
+      0 0 40px rgb(232, 235, 76),
+      0 0 80px rgb(240, 238, 151),
+      0 0 100px rgb(145, 130, 130);
+    border: 2px solid white;
+    border-radius:10px;
+}
+
+h1, h2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ffffff;
+    font-style: italic;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 40px #fff,
+      0 0 80px rgb(145, 142, 142),
+      0 0 100px rgb(145, 130, 130);
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.container { 
+    padding: 0 20px;
+    margin: 5px 0 20px 0;
+    display: flex;
+    flex: 1 auto;
+    justify-content: center;
+    /*align-items: center; пока уберем, центрует блок aside, но скорее всего не нужно*/
+    flex-wrap: wrap;
+}
+
+
+.container{
+    font-size: 120%;
+    color: white;
+    opacity: 90%;
+    line-height: 100%;
+    margin: 0 auto;
+}
+
+.block2 {
+    margin: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#education {
+    opacity: 100%;
+}
+
+#work-experience {
+    opacity: 100%;
+}
+
+.allskills {
+    position: relative;
+    top: -20px;
+    opacity: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allskills div {
+    color: white;
+    opacity: 100%;
+    font-size: 100%;
+    margin-right: 30px;
+}
+
+.language, .it-skills, .pwa {
+    padding: 0 0 0 20px;
+}
+
+p {
+    line-height: 150%;
+    font-size: 30px;
+}
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+.block3 {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photoya {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#contacts {
+    position: relative;
+    left: 20px;
+    font-size: 150%;
+    opacity: 80%;
+    margin: 10px;
+}
+
+#contacts ul{
+    list-style-type: none;
+    line-height: 150%;
+    font-size: 115%;
+}
+
+h3 {
+    line-height: 150%;
+    font-size: 40px;
+    margin: 25px 0 10px 0;
+    text-shadow:
+      0 0 5px rgb(230, 226, 26),
+      0 0 40px rgb(232, 235, 76),
+      0 0 80px rgb(240, 238, 151),
+      0 0 100px rgb(145, 130, 130);
+}
+
+h4 {
+    line-height: 110%;
+    font-size:30px;
+    margin: 25px 0 10px 0;
+}
+.myproject_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.project1, .project2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.description-box{
+    max-width:500px;
+    margin: 20px 10px;
+}
+.projectname{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.projectname a{
+    text-decoration: none;
+    color: white;
+    font-size:150%;
+    text-shadow:
+      0 0 5px rgb(230, 226, 26),
+      0 0 40px rgb(232, 235, 76),
+      0 0 80px rgb(240, 238, 151),
+      0 0 100px rgb(145, 130, 130);
+}
+
+.screen-box1 {
+    width:600px;
+    min-height:300px;
+    border:3px solid black;
+    background-image: url(./img/whackamole.jpg);
+    background-size: 100% 100%;
+}
+
+.screen-box2 {
+    width:600px;
+    min-height:300px;
+    border:3px solid black;
+    background-image: url(./img/jsclock.jpg);
+    background-size: 100% 100%;
+}
+.examples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.python-code, .vba-code, .js-code {
+    overflow: auto;
+    background-color: rgba(150, 147, 147, 0.3);
+    color: #ffffff;
+    padding: 0 10px;
+    width:280px;
+    height:300px;
+    font-size: 15px;
+}
+
+h5 {
+    line-height: 100%;
+    font-size: 130%;
+    margin: 30px 0 0 0;
+}
+
+.link {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.links { 
+    position: relative;
+    left: 60px;
+    display: inline;
+}
+
+.llink:hover {
+    z-index: 10;
+    transform: scale(1.5);
+}
+
+footer {
+    position: relative;
+    margin: 40px 0 50px 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    opacity: 90%;
+}
+
+@media (max-width: 600px){
+    .container, .container1{
+        max-width: 560px;
+        padding: 0 10px;
+    }
+    .block2_list {
+        padding: 0 10px;
+    }
+    .screen-box1, .screen-box2 {
+        max-width: 300px;
+        min-height: 150px;
+    }
+    .python-code, .vba-code, .js-code {
+        max-width: 400px;
+    }
+    
+}
