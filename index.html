@@ -5,64 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecv.css">
+    <link rel="stylesheet" href="styles/a11y-dark.min.css">
+    
 </head>
 <body>
     <header>
-        <h1>Andrei Trost</h1>
-        <h2>Application/Engineer</h2>
+        <div class="container1">
+            <h1>Andrei Trost</h1>
+            <h2>Application / Engineer</h2>
+            <nav>
+                <ul class="navigator">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#my-projects">My Projects</a></li>
+                    <li><a href="#code-examples">Code Example</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="container">
             <div class="block2">
-              <div class="education">
-                  <h3>Education</h3>
-                <ul>
-                    <li><p>2009-2013:<b> St.Petersburg State Polytechnic University, Saint Petersburg</b></p><i>Bachelor of Technical Physics</i> </li>
-                    <li><p>2013-2015:<b> St.Petersburg State Polytechnic University, Saint Petersburg</b></p><i>Master of Applied Mathematics and Physics</i></li>
-                </ul>
-            </div>
-              <div class="work-experience">
-                <h3>Work Experience</h3>
-                <ul>
-                    <li><p>2011-2015:<b> Sechenov Institute of Evolutionary Physiology and Biochemistry RAS</b></p><i>Junior research fellow</i> </li>
-                    <li><p>2016-present:<b> Medical Group LLC</b></p><i>Application specialist</i></li>
-                </ul>
-              </div>
-              <div class="skills">
-                <h3 class="paragraph">Skills</h3>
-              </div>
-              <div class="allskills">
-                <div class="language">
-                    <h4>Language</h4>
-                    <ul>
-                        <li><p>Russian - Native</p></li>
-                        <li><p>English - Upper Intermidiate</p></li>
+                <div id="education">
+                    <h3>Education</h3>
+                    <ul class="block2_list">
+                        <li><p>2009-2013:<b> St.Petersburg State Polytechnic University, Saint Petersburg</b></p><p><i>Bachelor of Technical Physics</i></p> </li>
+                        <li><p>2013-2015:<b> St.Petersburg State Polytechnic University, Saint Petersburg</b></p><p><i>Master of Applied Mathematics and Physics</i></p></li>
                     </ul>
                 </div>
-                <div class="it-skills">
-                    <h4>IT Skills</h4>
-                    <ul>
-                        <li><p>VBA - Upper Intermidiate</p></li>
-                        <li><p>Python - Pre-Intermediate</p></li>
-                        <li><p>HTML - Basic</p></li>
+                <div id="work-experience">
+                    <h3>Work Experience</h3>
+                    <ul class="block2_list">
+                        <li><p>2011-2015:<b> Sechenov Institute of Evolutionary Physiology and Biochemistry RAS</b></p><p><i>Junior research fellow</i></p> </li>
+                        <li><p>2016-present:<b> Medical Group LLC</b></p><p><i>Application specialist</i></p></li>
                     </ul>
                 </div>
-                <div class="pwa">
-                    <h4>Positive Work Attributes</h4>
-                    <ul>
-                        <li><p>Accurate</p></li>
-                        <li><p>Disciplined</p></li>
-                        <li><p>Responsive</p></li>
-                    </ul>
+                <div id="skills">
+                    <h3 class="paragraph">Skills</h3>
                 </div>
-              </div>
+                <div class="allskills">
+                    <div class="language">
+                        <h4>Language</h4>
+                        <ul>
+                            <li><p>Russian - Native</p></li>
+                            <li><p>English - B2</p></li>
+                        </ul>
+                    </div>
+                    <div class="it-skills">
+                        <h4>IT Skills</h4>
+                        <ul>
+                            <li><p>VBA - Upper Intermidiate</p></li>
+                            <li><p>Python - Pre-Intermediate</p></li>
+                            <li><p>HTML, CSS, JS - Basic</p></li>
+                        </ul>
+                    </div>
+                    <div class="pwa">
+                        <h4>Positive Work Attributes</h4>
+                        <ul>
+                            <li><p>Accurate</p></li>
+                            <li><p>Disciplined</p></li>
+                            <li><p>Responsive</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="my-projects">
+                    <h3 class="my-projects">My Projects</h3>
+                    <div class="myproject_box">
+                        <div class="project1">
+                            <div class="screen-box1"></div>
+                            <div class="description-box">
+                                <p class='projectname'><a href="https://rolling-scopes-school.github.io/andrei-anaheim-JSFEPRESCHOOL/whackamole/">Whack-a-mole</a></p>
+                                <p>Classic game "Whack-a-mole", but it`s a cinema quiz.<br>HTML, CSS, JS<br>2021 JS/FE Pre-School</p>
+                            </div>
+                        </div>
+                        <div class="project2">
+                            <div class="screen-box2"></div>
+                            <div class="description-box">
+                                <p class='projectname'><a href="https://rolling-scopes-school.github.io/andrei-anaheim-JSFEPRESCHOOL/jsclock/">JS-Clock</a></p>
+                                <p>Classic clock <br>Bonus: four additional clocks and alarm<br>HTML, CSS, JS<br>2021 JS/FE Pre-School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="code-examples">
+                    <h3 class="code-examples">Code Examples</h3>
+                    <div class="examples">
+                        <div class="Python">
+                            <h4>Python</h4>
+                            <pre class="python-code">
+                                <code>
+from urllib.request import urlopen
+from urllib.parse import urljoin
+from lxml.html import fromstring
+import re
+URL = 'http://fantasy-h2h.ru/h2h/team_match_data/'
+ITEM_PATH1 = '.breadcrumb li:first-child a'
+ITEM_PATH2 = '.team_name'
+ITEM_PATH3 = '.result a span'
+ITEM_PATH4 = '.extra_goals'
+ITEM_PATH5 = '.breadcrumb li:nth-child(5)'
+def parse_courses():
+ START = int(input("Enter START number: "))
+ FINISH = int(input("Enter FINISH number: "))
+ csvfile = open('2019result.csv', "w")
+ i = START
+ while i &lt;= FINISH :
+  adress = URL + str(i)
+  f = urlopen(adress)
+  list_html = f.read().decode('utf-8')
+  list_doc = fromstring(list_html)
+  print(i)
+  if list_doc.cssselect(ITEM_PATH1)[0].text is None:
+   i += 1
+  else:
+   csvfile.write(str(i) + '%')
+   for elem in list_doc.cssselect(ITEM_PATH1):
+    csvfile.write(elem.text + "%")
+   for elem in list_doc.cssselect(ITEM_PATH5):
+    try:
+     csvfile.write(str(elem.text).split(", ")[1] + "%")
+    except:
+     csvfile.write(str('ошибка') + "%")		
+   for elem in list_doc.cssselect(ITEM_PATH2):
+    try:
+     csvfile.write(elem.get('title') + "%")
+    except:
+     csvfile.write(str('ошибка') + "%")	
+   for elem in list_doc.cssselect(ITEM_PATH3):
+    csvfile.write(elem.text + "%")
+   for elem in list_doc.cssselect(ITEM_PATH4):
+    csvfile.write(elem.text + "%")   
+   csvfile.write("\n")
+   i += 1
+ f.close()
+def main():
+ parse_courses()
+if __name__ == '__main__':
+ main()
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="VBA">
+                            <h4>VBA</h4>
+                            <pre class="vba-code">
+                                <code>
+Sub FindAndReplace()
+  Dim MyRange As Range
+  Dim MyCell As Range
+  Set MyRange = Selection
+  For Each MyCell In MyRange
+    If Len(MyCell.Value) = 0 Then
+      MyCell = 0
+    End If
+  Next MyCell
+End Sub
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="JS">
+                            <h4>JS</h4>
+                            <pre class="js-code">
+                                <code class="javascript">
+function rgb(r, g, b){
+ function toHex(a) { 
+  if (a &lt;= 0) return '00';
+  else if (a &gt;= 255) return 'FF';
+  else return a.toString(16).toUpperCase();
+ }
+ return toHex(r) + toHex(g) + toHex(b);
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
             </div>
             <aside class="block3">
                 <figure class="photoya">
                     <img src="./img/photoja.jpg" alt="Мой рисунок" class="photo" width="250">
                 </figure>
-                <div class="contacts">
+                <div id="contacts">
                     <section itemscope itemtype="http://schema.org/Person">
                         <h3>Contact info</h3>
                         <ul>
@@ -90,6 +215,8 @@
             <a href="https://rs.school/js/"><img src="./img/rs_school_js.png" alt="RSSJS" width="130" class="llink"></a>
         </p>
     </footer>
+    <script src="highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
 
